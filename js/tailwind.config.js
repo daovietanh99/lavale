@@ -16,6 +16,11 @@ tailwind.config = {
         },
         boxShadow: {
           'homepage': '0 200px 0 200px #003a47',
+        },
+        backgroundImage: {
+          'ruouman': "url('./img/nen1.png')",
+          'ruoutaomeo': "url('./img/nen2.jfif')",
+          'ruouvai': "url('./img/nen3.jfif')"
         }
       }
     },
