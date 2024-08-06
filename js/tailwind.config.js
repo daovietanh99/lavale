@@ -8,7 +8,7 @@ tailwind.config = {
           lavalesemi: "#073b47",
           active: '#feefc0',
           advice: '#f5f2e3',
-          footer: "#061d23",
+          lavaledark: "#061d23",
         },
         fontFamily: {
           display: ["Playfair Display", 'serif'],
