@@ -23,7 +23,7 @@
 
 <body class="relative p-0 m-0 w-full overflow-x-hidden">
     <header id="header" class="relative p-0 w-full z-0 overflow-hidden">
-        <div class="absolute left-0 top-0 w-full">
+        <div class="absolute left-0 top-0 w-full z-10 bg-black/40">
             <div class="w-full flex flex-row items-center justify-center aspect-[10/1] bg-gradient-to-b from-lavalemenu/40">
                 <div class="w-[30%] flex items-end justify-end">
                     <a class="h-6 leading-6 uppercase mr-[20%] text-active border-b-[3px] hover:cursor-pointer border-active">
@@ -58,9 +58,13 @@
                 </button>
             </div>
         </div>
-        <img src="./img/homepage.png" class="w-full aspect-[1440/795]" />
 
-        <div class="absolute w-full left-0 bottom-0 aspect-[1440/72]">
+        <!-- <img src="./img/homepage.png" class="w-full aspect-[1440/795]" /> -->
+        <video autoplay muted loop width="100%" height="auto" class="w-full object-cover aspect-[1440/795] z-1">
+            <source src="./video/cover.mp4" type="video/mp4">
+        </video>
+
+        <div class="absolute w-full left-0 bottom-0 aspect-[1440/72] z-10">
             <img src="./img/spliter.png" class="w-full scale-x-[-1] rotate-180">
         </div>
     </header>
