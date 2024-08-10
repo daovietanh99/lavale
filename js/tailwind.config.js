@@ -20,7 +20,8 @@ tailwind.config = {
         backgroundImage: {
           'ruouman': "url('./img/nen1.png')",
           'ruoutaomeo': "url('./img/nen2.jfif')",
-          'ruouvai': "url('./img/nen3.jfif')"
+          'ruouvai': "url('./img/nen3.jfif')",
+          'hoatdong': "url('./img/post.jfif')"
         }
       }
     },
