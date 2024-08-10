@@ -21,7 +21,8 @@ tailwind.config = {
           'ruouman': "url('./img/nen1.png')",
           'ruoutaomeo': "url('./img/nen2.jfif')",
           'ruouvai': "url('./img/nen3.jfif')",
-          'hoatdong': "url('./img/post.jfif')"
+          'hoatdong': "url('./img/post.jfif')",
+          'spliter': "url('./img/spliter.png')"
         }
       }
     },
