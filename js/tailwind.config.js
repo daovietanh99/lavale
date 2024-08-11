@@ -22,7 +22,8 @@ tailwind.config = {
           'ruoutaomeo': "url('./img/nen2.jfif')",
           'ruouvai': "url('./img/nen3.jfif')",
           'hoatdong': "url('./img/post.jfif')",
-          'spliter': "url('./img/spliter.png')"
+          'spliter': "url('./img/spliter.png')",
+          'logo': "url('./img/logo.png')"
         }
       }
     },
