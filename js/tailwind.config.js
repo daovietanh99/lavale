@@ -24,7 +24,8 @@ tailwind.config = {
           'hoatdong': "url('./img/post.jfif')",
           'spliter': "url('./img/spliter.png')",
           'logo': "url('./img/logo.png')",
-          'middleground': "url('./img/middleground.png')"
+          'middleground': "url('./img/middleground.png')",
+          'cover': "url('./img/cover.jfif')"
         }
       }
     },
