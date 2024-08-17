@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./js/menu.responsive.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/tailwind.config.js" type="module"></script>
+    <title>Lavale</title>
+</head>
+
+<body class="bg-lavale p-0 m-0 w-full overflow-x-hidden contain">
+    <header class="
+        relative p-0 w-full z-0 overflow-hidden aspect-[375/70] flex items-center z-2
+        md:aspect-[834/140]
+        lg:aspect-[1440/140]
+    ">
+        <div class="
+            absolute left-0 top-0 w-full z-8
+        ">
+            <div class="
+                w-full flex-row items-center hidden justify-center bg-gradient-to-b from-lavalemenu/40
+                md:flex md:aspect-[834/140]
+                lg:aspect-[1440/140]
+            " data-menu="full-menu">
+                <div class="w-[30%] flex items-end justify-end">
+                    <a class="h-6 leading-6 uppercase mr-[20%] text-active border-b-[3px] hover:cursor-pointer border-active">
+                        Trang Chủ
+                    </a>
+                    <a
+                        class="h-6 leading-6 uppercase mr-[20%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active">
+                        Sản phẩm
+                    </a>
+                </div>
+                <img src="./img//logo.png" class="h-full">
+                <div class="w-[30%] flex">
+                    <a
+                        class="h-6 leading-6 uppercase ml-[20%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active">
+                        Giới thiệu
+                    </a>
+                    <a
+                        class="h-6 leading-6 uppercase ml-[20%] text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active">
+                        Liên hệ
+                    </a>
+                </div>
+            </div>
+            <div class="
+                relative w-full flex-row items-center flex justify-center align-center aspect-[375/70] bg-gradient-to-b from-lavalemenu/40
+                md:hidden
+            " data-menu="simple-menu-show">
+                <!-- <img src="./img/logo1.png" class="h-full"> -->
+                <div class="bg-center bg-no-repeat bg-cover bg-logo h-full aspect-[94.35/70]"></div>
+                <div class="absolute h-full top-0 right-0 flex items-center flex-col justify-center pr-8"
+                    data-menu="toggle-open"
+                >
+                    <img src="./img/menu.svg" class="h-[23%] float-right">
+                </div>
+            </div>
+        </div>
+
+        <div class="
+            absolute left-0 top-0 z-10
+            h-full bg-lavale
+            aspect-[375/718]
+            hidden
+        " data-menu="simple-menu-popup">
+            <div class="relative w-full h-full">
+                <div class="
+                    absolute left-0 top-0 w-full z-10 bg-black/70 aspect-[375/718]
+                    md:aspect-[834/740]
+                    lg:aspect-[1440/795]
+                ">
+                    <div class="
+                        relative w-full flex-row items-center flex justify-center align-center aspect-[375/70] bg-gradient-to-b from-lavalemenu/40
+                        md:hidden
+                    ">
+                        <!-- <img src="./img/logo1.png" class="h-full"> -->
+                        <div class="bg-center bg-no-repeat bg-cover bg-logo h-full aspect-[94.35/70]"></div>
+                        <div class="absolute h-full top-0 right-0 flex items-center flex-col justify-center pr-8"
+                            data-menu="toggle-close"
+                        >
+                            <img src="./img/menu.svg" class="h-[23%] float-right">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="relative bg-lavale w-full h-fit overflow-hidden z-1">
+        <div class="w-full bg-transparent z-9">
+            <div class="
+                flex flex-col w-[88.89%] mx-auto items-center align-center justify-center p-0 my-24 z-10
+            ">
+                <img src="./img/advice.png" class="
+                    w-[81%] mb-4
+                    md:w-[32%]
+                ">
+                <h1 class="w-full text-center text-5xl text-white font-display mb-4 capitalize">Công dụng của rượu cau chữa viêm lợi</h1>
+                <span class="block w-full text-xl text-center text-white/60 font-medium font-monsterrat mb-12 ">
+                    29.12.1964
+                </span>
+                <div class="w-full">
+                    <span class="
+                        block px-[17%] text-left font-monsterrat font-[15px] leading-[24px] text-white
+                    ">
+                        Chúng tôi luôn lựa chọn những nguyên liệu đắt nhất, tốt nhất của đất nước để tạo ra chất rượu của mình. Quan trọng nhất là nguồn nước chúng tôi lấy từ nguồn nước đá ong, với lõi lọc tự nhiên là lớp đá ong hàng ngàn lớp chảy qua thời gian sẽ cho nguồn nước tinh khiết nhất. Kiểm nghiệm nguồn nước của chúng tôi cho tỉ lệ tinh khiết gấp 6 lần ngưỡng nước uống thông thường. Cốt rượu được nấu thêm với men thuốc bắc 36 vị thuốc, gạo nếp Điện Biên loại 1. Rượu sau khi chưng cất sẽ chạy qua máy khử độc tố loại bỏ adehyde, methanol... và ngâm trong chum tối thiểu 1 năm
+                    </span>
+                    <div class="
+                        relative w-full aspect-[311/480] flex items-center justify-center align-center bg-[url('./img/timeline1.jfif')] rounded-md bg-no-repeat bg-center bg-cover
+                        md:aspect-[770/480]
+                        lg:aspect-[1280/480]
+                    ">
+                        <img src="./img/spliter.png" class="w-full aspect-[333/24] absolute scale-x-[-1] top-[-1px] left-0"/>
+                        <img src="./img/spliter-vertical.png" class="h-full aspect-[24/480] absolute scale-y-[-1] top-0 left-[-1px]"/>
+                        <img src="./img/spliter-vertical.png" class="h-full aspect-[24/480] absolute scale-y-[-1] rotate-180 top-0 right-[-1px]" />
+                        <img src="./img/spliter.png" class="w-full aspect-[333/24] absolute scale-x-[-1] rotate-180 bottom-[-1px] left-0"/>
+                    </div>
+                    <span class="
+                        block px-[17%] text-left font-monsterrat font-[15px] leading-[24px] text-white
+                    ">
+                        Chúng tôi luôn lựa chọn những nguyên liệu đắt nhất, tốt nhất của đất nước để tạo ra chất rượu của mình. Quan trọng nhất là nguồn nước chúng tôi lấy từ nguồn nước đá ong, với lõi lọc tự nhiên là lớp đá ong hàng ngàn lớp chảy qua thời gian sẽ cho nguồn nước tinh khiết nhất. Kiểm nghiệm nguồn nước của chúng tôi cho tỉ lệ tinh khiết gấp 6 lần ngưỡng nước uống thông thường. Cốt rượu được nấu thêm với men thuốc bắc 36 vị thuốc, gạo nếp Điện Biên loại 1. Rượu sau khi chưng cất sẽ chạy qua máy khử độc tố loại bỏ adehyde, methanol... và ngâm trong chum tối thiểu 1 năm
+                    </span>
+                    <span class="
+                        block px-[17%] text-left font-monsterrat font-[15px] leading-[24px] text-white
+                    ">
+                        Chúng tôi luôn lựa chọn những nguyên liệu đắt nhất, tốt nhất của đất nước để tạo ra chất rượu của mình. Quan trọng nhất là nguồn nước chúng tôi lấy từ nguồn nước đá ong, với lõi lọc tự nhiên là lớp đá ong hàng ngàn lớp chảy qua thời gian sẽ cho nguồn nước tinh khiết nhất. Kiểm nghiệm nguồn nước của chúng tôi cho tỉ lệ tinh khiết gấp 6 lần ngưỡng nước uống thông thường. Cốt rượu được nấu thêm với men thuốc bắc 36 vị thuốc, gạo nếp Điện Biên loại 1. Rượu sau khi chưng cất sẽ chạy qua máy khử độc tố loại bỏ adehyde, methanol... và ngâm trong chum tối thiểu 1 năm
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <div class="
+        relative w-full aspect-[375/72] bg-lavale
+        flex justify-center align-center items-center
+        border-0 p-0
+        md:aspect-[834/72]
+        lg:aspect-[1440/72]
+    ">
+        <img src="img/spliter-diamond.svg">
+    </div>
+
+    <div class="w-full bg-transparent z-9">
+        <div class="
+            flex flex-col w-[88.89%] mx-auto items-center align-center justify-center p-0 my-24 z-10
+            md:px-[9%] md:py-[7%] md:my-0
+        ">
+            <h1 class="w-full text-center text-5xl text-white font-display mb-12 capitalize">Những bài viết khác</h1>
+            <div class="flex flex-col w-full justify-between items-center align-center space-y-4">
+                <div class="
+                    grid grid-cols-1 grid-rows-1 gap-3 w-full justify-between items-center align-center z-10
+                    md:grid-cols-2 md:grid-rows-1
+                ">
+                    <div class="relative flex flex-col justify-center aspect-[523/192] bg-lavalelight/30 rounded-md">
+                        <img src="./img/spliter.png" class="w-full aspect-[523/16] absolute scale-x-[-1] top-[-1px] left-0"/>
+                        <img src="./img/spliter-vertical.png" class="h-full aspect-[16/192] absolute scale-y-[-1] top-0 left-[-1px]"/>
+                        <img src="./img/spliter-vertical.png" class="h-full aspect-[16/192] absolute scale-y-[-1] rotate-180 top-0 right-[-1px]" />
+                        <img src="./img/spliter.png" class="w-full aspect-[523/16] absolute scale-x-[-1] rotate-180 bottom-[-1px] left-0"/>
+                        <span class="
+                            block text-left font-medium font-monsterrat text-lg text-white px-12 mb-8 pt-12
+                            lg:pt-0
+                        ">
+                            Bài thuốc ngâm rượu chữa yếu sinh lý hiệu quả
+                        </span>
+                        <span class="
+                            flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white px-12 pb-12
+                            lg:pb-0
+                        ">
+                            Xem chi tiết
+                            <svg class="h-6 w-6 text-white ml-4"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="13" y1="18" x2="19" y2="12" />  <line x1="13" y1="6" x2="19" y2="12" /></svg>
+                        </span>
+                    </div>
+                    <div class="relative flex flex-col justify-center aspect-[523/192] bg-lavalelight/30 rounded-md">
+                        <img src="./img/spliter.png" class="w-full aspect-[523/16] absolute scale-x-[-1] top-[-1px] left-0"/>
+                        <img src="./img/spliter-vertical.png" class="h-full aspect-[16/192] absolute scale-y-[-1] top-0 left-[-1px]"/>
+                        <img src="./img/spliter-vertical.png" class="h-full aspect-[16/192] absolute scale-y-[-1] rotate-180 top-0 right-[-1px]" />
+                        <img src="./img/spliter.png" class="w-full aspect-[523/16] absolute scale-x-[-1] rotate-180 bottom-[-1px] left-0"/>
+                        <span class="
+                            block text-left font-medium font-monsterrat text-lg text-white px-12 mb-8 pt-12
+                            lg:pt-0
+                        ">
+                            Cách ngâm rượu gừng nghệ hạ thổ
+                        </span>
+                        <span class="
+                            flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white px-12 pb-12
+                            lg:pb-0
+                        ">
+                            Xem chi tiết
+                            <svg class="h-6 w-6 text-white ml-4"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="13" y1="18" x2="19" y2="12" />  <line x1="13" y1="6" x2="19" y2="12" /></svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="
+        relative flex flex-col bg-lavaledark w-full z-20 overflow-hidden aspect-[375/424]
+        md:aspect-[834/424]
+        lg:aspect-[1440/440]
+    ">
+        <div class="
+            absolute w-full aspect-[375/72] top-[-1px] left-0 
+            bg-center bg-no-repeat bg-cover bg-spliter scale-x-[-1]
+            border-0 p-0
+            md:aspect-[834/72]
+            lg:aspect-[1440/72]
+        ">
+        </div>
+        <div class="
+            flex flex-col w-full aspect-[375/372] mx-auto items-center align-center justify-center
+            md:aspect-[834/372]
+            lg:aspect-[1280/388] lg:w-[88.89%]
+        ">
+            <img src="./img/logo.png" class="w-[9%]">
+            <div class="flex flex-row h-fit mb-4">
+                <div class="text-center font-monsterrat text-sm text-white px-8 border-r-[1px] border-white/30 cursor-pointer">Trang chủ</div>
+                <div class="text-center font-monsterrat text-sm text-white px-8 border-r-[1px] border-white/30 cursor-pointer">Giới thiệu</div>
+                <div class="text-center font-monsterrat text-sm text-white px-8 border-r-[1px] border-white/30 cursor-pointer">Lịch sử</div>
+                <div class="text-center font-monsterrat text-sm text-white px-8 cursor-pointer">Liên hệ</div>
+            </div>
+            <div class="flex flex-row mb-2">
+                <span class="text-sm mr-4 font-monsterrat text-white/60">Điện thoại</span>
+                <span class="text-sm font-monsterrat text-white">0972897891</span>
+            </div>
+            <div class="flex flex-row">
+                <span class="text-sm mr-4 font-monsterrat text-white/60">Email</span>
+                <span class="text-sm font-monsterrat text-white">cskh@lavale.vn</span>
+            </div>
+        </div>
+        <div class="grow flex flex-row w-[88.89%] mx-auto items-center align-center border-t-[1px] border-white/30 py-4">
+            <span class="w-full uppercase align-center font-monsterrat leading-8 text-white/60 text-xs text-center font-medium">© LAVALE 2024</span>
+        </div>
+    </footer>
+</body>
+
+<script>
+    AOS.init();
+</script>
+
+<script>
+    MenuResponsive.init();
+</script>
+
+</html>
