@@ -130,20 +130,53 @@
         " data-menu="simple-menu-popup">
             <div class="relative w-full h-full">
                 <div class="
-                    absolute left-0 top-0 w-full z-10 bg-black/70 aspect-[375/718]
+                    absolute left-0 top-0 w-full z-10 aspect-[375/718]
                     md:aspect-[834/740]
                     lg:aspect-[1440/795]
                 ">
                     <div class="
                         relative w-full flex-row items-center flex justify-center align-center aspect-[375/70] bg-gradient-to-b from-lavalemenu/40
+                        md:hidden
+                        mb-10px
                     ">
                         <!-- <img src="./img/logo1.png" class="h-full"> -->
                         <div class="bg-center bg-no-repeat bg-cover bg-logo h-full aspect-[94.35/70]"></div>
                         <div class="absolute h-full top-0 right-0 flex items-center flex-col justify-center pr-8"
                             data-menu="toggle-close"
                         >
-                            <img src="./img/menu.svg" class="h-[23%] float-right">
+                            <img src="./img/close.svg" class="h-[23%] float-right">
                         </div>
+                    </div>
+
+                    <div class="w-full flex flex-col justify-center align-center items-center pt-[32px]">
+                        <a href="/" class="block h-6 leading-[24px] text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]">
+                            Trang Chủ
+                        </a>
+                        <a  href="/products.html"
+                            class="h-6 leading-[24px] text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]">
+                            Sản phẩm
+                        </a>
+                        <a href="/introduction.html"
+                            class="h-6 leading-[24px] text-[16px] font-semibold uppercase text-active border-b-[3px] hover:cursor-pointer border-active text-center mb-[32px]">
+                            Giới thiệu
+                        </a>
+                        <a href="/contact.html"
+                            class="h-6 leading-[24px] text-[16px] font-semibold uppercase text-white hover:text-active hover:border-b-2 hover:cursor-pointer border-active text-center mb-[32px]">
+                            Liên hệ
+                        </a>
+                    </div>
+                </div>
+                <div class="fixed w-full bottom-0 left-0 flex flex-col align-center justify-center items-center">
+                    <div class="flex flex-row mb-[4px]">
+                        <span class="text-[15px] leading-[24px] mr-[10px] font-monsterrat text-white/60">Điện thoại</span>
+                        <span class="text-[15px] leading-[24px] font-monsterrat text-white">0972897891</span>
+                    </div>
+                    <div class="flex flex-row">
+                        <span class="text-[15px] leading-[24px] mr-[10px] font-monsterrat text-white/60 mb-10px">Email</span>
+                        <span class="text-[15px] leading-[24px] font-monsterrat text-white">cskh@lavale.vn</span>
+                    </div>
+                    <div class="w-full flex flex-row py-[16px]">
+                        <span class="w-full text-center font-monsterrat text-white/60 font-semibold text-[12px] leading-[20px]">© LAVALE 2024</span>
                     </div>
                 </div>
             </div>
