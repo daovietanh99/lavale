@@ -19,6 +19,39 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/tailwind.config.js" type="module"></script>
+
+    <style>
+        .fade-in-right {
+          animation: fade-in-right 0.5s ease-out;
+        }
+    
+        @keyframes fade-in-right {
+          0% {
+            opacity: 0;
+            transform: translateX(100px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+        .fade-out-right {
+            animation: fade-out-right 0.5s ease-out;
+        }
+
+        @keyframes fade-out-right {
+            0% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+        }
+        </style>
+
     <title>Lavale</title>
 </head>
 
@@ -102,7 +135,6 @@
                 ">
                     <div class="
                         relative w-full flex-row items-center flex justify-center align-center aspect-[375/70] bg-gradient-to-b from-lavalemenu/40
-                        md:hidden
                     ">
                         <!-- <img src="./img/logo1.png" class="h-full"> -->
                         <div class="bg-center bg-no-repeat bg-cover bg-logo h-full aspect-[94.35/70]"></div>
@@ -140,8 +172,8 @@
                     Lavale mang lại sự hưng phấn tự tại, niềm vui, sự thân mật và sảng khoái nhưng không với cái giá của đau đầu, mệt mỏi, khát nước của ngày mai tỉnh dậy.
                 </span>
                 <div class="
-                    flex flex-row w-full justify-between items-center align-center gap-[32px]
-                    md:aspect-[770/480]
+                    flex flex-col w-full justify-between items-center align-center gap-[32px]
+                    md:aspect-[770/480] md:flex-row
                     lg:w-[83%] lg:aspect-[1062/464]
                 ">
                     

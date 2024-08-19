@@ -19,6 +19,39 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/tailwind.config.js" type="module"></script>
+
+    <style>
+        .fade-in-right {
+          animation: fade-in-right 0.5s ease-out;
+        }
+    
+        @keyframes fade-in-right {
+          0% {
+            opacity: 0;
+            transform: translateX(100px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+        .fade-out-right {
+            animation: fade-out-right 0.5s ease-out;
+        }
+
+        @keyframes fade-out-right {
+            0% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+        }
+    </style>
+
     <title>Lavale</title>
 </head>
 
