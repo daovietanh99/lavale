@@ -16,6 +16,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="./js/menu.responsive.js"></script>
+    <script src="./js/button.link.js"></script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/tailwind.config.js" type="module"></script>
@@ -509,7 +510,7 @@
                             <span class="
                                 flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white px-12 pb-12
                                 lg:pb-0
-                            ">
+                            " data-button-link="/blogs.html">
                                 Xem chi tiết
                                 <svg class="h-6 w-6 text-white ml-4"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="13" y1="18" x2="19" y2="12" />  <line x1="13" y1="6" x2="19" y2="12" /></svg>
                             </span>
@@ -528,7 +529,7 @@
                             <span class="
                                 flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white px-12 pb-12
                                 lg:pb-0
-                            ">
+                            " data-button-link="/blogs.html">
                                 Xem chi tiết
                                 <svg class="h-6 w-6 text-white ml-4"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="13" y1="18" x2="19" y2="12" />  <line x1="13" y1="6" x2="19" y2="12" /></svg>
                             </span>
@@ -552,7 +553,7 @@
                             <span class="
                                 flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white px-12 pb-12
                                 lg:pb-0
-                            ">
+                            " data-button-link="/blogs.html">
                                 Xem chi tiết
                                 <svg class="h-6 w-6 text-white ml-4"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="13" y1="18" x2="19" y2="12" />  <line x1="13" y1="6" x2="19" y2="12" /></svg>
                             </span>
@@ -571,7 +572,7 @@
                             <span class="
                                 flex flex-row items-center inline-block text-left text-base font-semibold font-monsterrat uppercase text-white px-12 pb-12
                                 lg:pb-0
-                            ">
+                            " data-button-link="/blogs.html">
                                 Xem chi tiết
                                 <svg class="h-6 w-6 text-white ml-4"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="13" y1="18" x2="19" y2="12" />  <line x1="13" y1="6" x2="19" y2="12" /></svg>
                             </span>
@@ -604,10 +605,10 @@
         ">
             <img src="./img/logo.png" class="w-[9%]">
             <div class="flex flex-row h-fit mb-4">
-                <div class="text-center font-monsterrat text-sm text-white px-8 border-r-[1px] border-white/30 cursor-pointer">Trang chủ</div>
-                <div class="text-center font-monsterrat text-sm text-white px-8 border-r-[1px] border-white/30 cursor-pointer">Giới thiệu</div>
-                <div class="text-center font-monsterrat text-sm text-white px-8 border-r-[1px] border-white/30 cursor-pointer">Lịch sử</div>
-                <div class="text-center font-monsterrat text-sm text-white px-8 cursor-pointer">Liên hệ</div>
+                <div class="text-center font-monsterrat text-sm text-white px-8 border-r-[1px] border-white/30 cursor-pointer" data-button-link="/">Trang chủ</div>
+                <div class="text-center font-monsterrat text-sm text-white px-8 border-r-[1px] border-white/30 cursor-pointer" data-button-link="/introduction.html">Giới thiệu</div>
+                <div class="text-center font-monsterrat text-sm text-white px-8 border-r-[1px] border-white/30 cursor-pointer" data-button-link="/introduction.html">Lịch sử</div>
+                <div class="text-center font-monsterrat text-sm text-white px-8 cursor-pointer" data-button-link="/contact.html">Liên hệ</div>
             </div>
             <div class="flex flex-row mb-2">
                 <span class="text-sm mr-4 font-monsterrat text-white/60">Điện thoại</span>
@@ -630,6 +631,7 @@
 
 <script>
     MenuResponsive.init();
+    ButtonLink.init();
 </script>
 
 </html>
