@@ -17,6 +17,7 @@
 
     <script src="./js/menu.responsive.js"></script>
     <script src="./js/button.link.js"></script>
+    <script src="./js/pagination.js"></script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/tailwind.config.js" type="module"></script>
@@ -613,12 +614,12 @@
                     </div>
                 </div>
 
-                <div class="w-full flex flex-row justify-center items-center align-center">
+                <div class="w-full flex flex-row justify-center items-center align-center" id="pagination">
                     <span class="
                         block uppercase mr-[16px] cursor-pointer
                         font-monsterrat font-semibold text-[16px] leading-[24px] text-white/30
-                    ">Quay lại</span>
-                    <div class="flex flex-row justify-between gap-[8px]">
+                    " data-pagination-prev>Quay lại</span>
+                    <div class="flex flex-row justify-between gap-[8px]" data-pagination-pages>
                         <div class="
                             w-[55px] aspect-[1/1] cursor-pointer
                             border-[2px] border-white rounded-[8px] 
@@ -629,6 +630,7 @@
                         </div>
                         <div class="
                             w-[55px] aspect-[1/1] cursor-pointer
+                            border-0 border-white rounded-[8px]
                             flex justify-center align-center items-center
                             font-monsterrat font-semibold text-[18px] leading-[24px] text-white
                         ">
@@ -652,7 +654,7 @@
                     <span class="
                         block uppercase ml-[16px] cursor-pointer
                         font-monsterrat font-semibold text-[16px] leading-[24px] text-white
-                    ">Tiếp theo</span>
+                    " data-pagination-next>Tiếp theo</span>
                 </div>
             </div>
         </div>
@@ -707,6 +709,7 @@
 <script>
     MenuResponsive.init();
     ButtonLink.init();
+    new Pagination("pagination", 5, 10, 4)
 </script>
 
 </html>
