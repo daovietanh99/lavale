@@ -60,46 +60,26 @@ class Pagination {
     }
 
     change_current_page(current_page) {
-        let half_left_display_pages = Math.floor((this.display_pages - 1)/2)
-        let half_right_display_pages = this.display_pages - this.half_left_display_pages - 1
+        let start_index = current_page
+        let end_index = current_page
 
-        let pages_indices = []
-
-        for (let i = 1; i <= this.display_pages; i ++) {
-            pages_indices.push(current_page - i)
-        }
-
-        pages_indices.push(current_page)
-
-        for (let i = 1; i <= this.display_pages; i ++) {
-            pages_indices.push(current_page + i)
-        }
-
-        let half_left_display_pages_ = pages_indices[this.display_pages -1] < 0 ? current_page - 1 : half_left_display_pages
-        let half_right_display_pages_ = pages_indices[this.display_pages + this.display_pages] > this.num_pages ? this.num_pages - current_page : half_right_display_pages
-
-        if (half_left_display_pages_ + 1 + half_right_display_pages_ != this.display_pages) {
-            if (pages_indices[this.display_pages-1] >= 0 && pages_indices[this.display_pages + this.display_pages] > this.num_pages) {
-                half_left_display_pages_ = this.display_pages - half_right_display_pages_ - 1
-            } else if (pages_indices[this.display_pages-1] < 0 && pages_indices[this.display_pages + this.display_pages] <= this.num_pages) {
-                half_right_display_pages_ = this.display_pages - half_left_display_pages_ - 1
+        while (true) {
+            let running = false
+            if (start_index - 1 > 0 && end_index - start_index + 2 <= this.display_pages) {
+                start_index -= 1
+                running = true
             }
+            if (end_index + 1 <= this.num_pages && end_index - start_index + 2 <= this.display_pages) {
+                end_index += 1
+                running = true
+            }
+            if (!running || end_index - start_index + 1 == this.display_pages) {
+                break
+            } 
         }
 
-        if (half_left_display_pages_ == 0 && current_page - half_left_display_pages_ - 1 >= 1) {
-            half_left_display_pages_ = 1
-            half_right_display_pages_ = half_right_display_pages_ -1
-        }
+        this.pagination_list.innerHTML = this.get_inner_html(start_index, end_index)
 
-        if (half_right_display_pages_ == 0 && current_page + half_right_display_pages_ + 1 <= this.num_pages) {
-            half_right_display_pages_ = 1
-            half_left_display_pages_ = half_left_display_pages_ -1
-        }
-
-        console.log(half_left_display_pages_, half_right_display_pages_)
-
-        this.pagination_list.innerHTML = this.get_inner_html(current_page - half_left_display_pages_, current_page + half_right_display_pages_)
-        
         this.set_current_page(current_page)
     }
 }
