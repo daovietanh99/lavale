@@ -31,6 +31,8 @@ class Pagination {
     }
 
     set_current_page(current_page) {
+        this.change_current_page(current_page)
+
         try {
             let current = this.pagination_list.getElementsByClassName("border-[2px]")[0]
             current.classList.add("border-0")
